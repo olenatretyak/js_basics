@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Basic</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+//1
+	var personName = "Mikki"
+	var time = "tomorrow at 12.35"
+	var place = "Lviv"
+	var event = prompt ("Please enter event", "will be playing football ")
+
+	var sentence = personName + " " + event + time + " " + "in " + place 
+	console.log(sentence)
+
+//2
+
+	var x1 = 5;
+	var y1 =7;
+
+	var x2 = prompt('Add coordinate x2 for point B', '')
+	var y2 = prompt('Add coordinate y2 for point B', '')
+
+
+	var result = Math.sqrt((x2 - x1)*(x2 - x1) + (y2-y1)*(y2 - y1));
+
+	alert("The distance between points A(" + x1 + "," + y1 + ")" + " and B(" + x2 + "," + y2 + ")" + " is " + result);
+	
+
+//3
+
+	var a = "";
+
+	for (var i = 0; i <10; i++) {
+		a += "#";
+		console.log(a);
+	}
+
+//4
+	i = 0;
+	while (i < 7) {
+		if (i % 2 == 0) {
+			console.log("# # # # #");
+		} else {
+			console.log(" # # # # #");
+		}
+		i++; 
+	} 
+
+//5 
+
+	var randNumb = Math.floor((Math.random() * 100) + 1);
+
+	var number = prompt("Guess the number", "");
+
+
+	while (number != randNumb) {
+		if (number > randNumb) {
+			alert("Our number is lower, try again");
+		} else {
+			alert("Our number is higher, try again");
+		} 
+		number = prompt("Try to guess number again", "");
+	}
+
+	alert("You are right, the number is " + randNumb);
+
+
+</script>
+<body>
+
+</body>
+</html>
